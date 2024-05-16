@@ -26,7 +26,7 @@
             <!-- nome header sx -->
             <div class="header border-end">
                 <div class="d-flex align-items-center">
-                    <img class="avatar" src="img/avatar1.png" alt="">
+                    <img class="avatar" src="img/avatar_1.png" alt="">
                     <div class="nome-avatar-header">sofia</div>
                 </div>
                 <!-- icone header sx -->
@@ -56,11 +56,12 @@
                 <div class="overflow-auto contacts-container">
 
                     <!-- contatti -->
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
+
+                    <div v-for="elemento in contacts" class="d-flex contacts">
+                        <img class="avatar" :src="elemento.avatar" alt="">
                         <div class="d-flex container-fluid justify-content-between ">
                             <div class="info-sx ">
-                                <p class="nome">Michele</p>
+                                <p class="nome">{{elemento.name}}</p>
                                 <p class="info">ultimo messaggio inviato</p>
                             </div>
                             <div class="info-dx ">
@@ -69,128 +70,9 @@
                         </div>
                     </div>
 
+
                     <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
-                        <div class="d-flex container-fluid justify-content-between ">
-                            <div class="info-sx ">
-                                <p class="nome">Michele</p>
-                                <p class="info">ultimo messaggio inviato</p>
-                            </div>
-                            <div class="info-dx ">
-                                12:00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
-                        <div class="d-flex container-fluid justify-content-between ">
-                            <div class="info-sx ">
-                                <p class="nome">Michele</p>
-                                <p class="info">ultimo messaggio inviato</p>
-                            </div>
-                            <div class="info-dx ">
-                                12:00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
-                        <div class="d-flex container-fluid justify-content-between ">
-                            <div class="info-sx ">
-                                <p class="nome">Michele</p>
-                                <p class="info">ultimo messaggio inviato</p>
-                            </div>
-                            <div class="info-dx ">
-                                12:00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
-                        <div class="d-flex container-fluid justify-content-between ">
-                            <div class="info-sx ">
-                                <p class="nome">Michele</p>
-                                <p class="info">ultimo messaggio inviato</p>
-                            </div>
-                            <div class="info-dx ">
-                                12:00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
-                        <div class="d-flex container-fluid justify-content-between ">
-                            <div class="info-sx ">
-                                <p class="nome">Michele</p>
-                                <p class="info">ultimo messaggio inviato</p>
-                            </div>
-                            <div class="info-dx ">
-                                12:00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
-                        <div class="d-flex container-fluid justify-content-between ">
-                            <div class="info-sx ">
-                                <p class="nome">Michele</p>
-                                <p class="info">ultimo messaggio inviato</p>
-                            </div>
-                            <div class="info-dx ">
-                                12:00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
-                        <div class="d-flex container-fluid justify-content-between ">
-                            <div class="info-sx ">
-                                <p class="nome">Michele</p>
-                                <p class="info">ultimo messaggio inviato</p>
-                            </div>
-                            <div class="info-dx ">
-                                12:00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
-                        <div class="d-flex container-fluid justify-content-between ">
-                            <div class="info-sx ">
-                                <p class="nome">Michele</p>
-                                <p class="info">ultimo messaggio inviato</p>
-                            </div>
-                            <div class="info-dx ">
-                                12:00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
-                        <div class="d-flex container-fluid justify-content-between ">
-                            <div class="info-sx ">
-                                <p class="nome">Michele</p>
-                                <p class="info">ultimo messaggio inviato</p>
-                            </div>
-                            <div class="info-dx ">
-                                12:00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
-                        <div class="d-flex container-fluid justify-content-between ">
-                            <div class="info-sx ">
-                                <p class="nome">Michele</p>
-                                <p class="info">ultimo messaggio inviato</p>
-                            </div>
-                            <div class="info-dx ">
-                                12:00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex contacts ">
-                        <img class="avatar" src="img/avatar2.png" alt="">
+                        <img class="avatar" src="img/avatar_2.png" alt="">
                         <div class="d-flex container-fluid justify-content-between ">
                             <div class="info-sx ">
                                 <p class="nome">Michele</p>
@@ -212,7 +94,7 @@
         <div id="col-dx">
             <div class="header border-start">
                 <div class="d-flex align-items-center">
-                    <img class="avatar" src="img/avatar1.png" alt="">
+                    <img class="avatar fix" src="img/avatar_1.png" alt="">
                     <div class="d-flex container-fluid justify-content-between ">
                         <div class="info-sx ">
                             <p class="nome">Michele</p>

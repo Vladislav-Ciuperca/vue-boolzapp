@@ -2,7 +2,11 @@
     border: 2px dashed violet;
 }
 
+.fix {
+    width: 4rem !important;
+}
 
+/* =======================ashkebepinai==================== */
 
 * {
     box-sizing: border-box;
