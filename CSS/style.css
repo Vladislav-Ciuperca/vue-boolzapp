@@ -1,6 +1,171 @@
+.debug {
+    border: 2px dashed violet;
+}
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-style: arial;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(218, 219, 212, 1) 85%, rgba(0, 150, 135, 1) 85%);
+    display: flex;
+}
+
+#app {
+    width: 80%;
+    height: 90%;
+    /* border: 2px dashed red; */
+    margin: auto;
+    background-color: white;
+    display: flex;
+}
+
+#col-sx {
+    height: 100%;
+    width: 40%;
+    /* border: 2px dashed red; */
+}
+
+#col-dx {
+    height: 100%;
+    width: 60%;
+    /* border: 2px dashed red; */
+}
+
+.header {
+    width: 100%;
+    height: 8%;
+    /* border: 2px dashed blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    background: #EAEAEA;
+    padding: 0 0.7rem;
+}
+
+#body-sx {
+    width: 100%;
+    height: 92%;
+    /* border: 2px dashed blue; */
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #a0a0a0;
+}
+
+.nome-avatar-header {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+i {
+    font-size: 1.5rem;
+    padding: 0 0.7rem;
+    color: #909090;
+}
+
+.contacts {
+    padding: 0.6rem 1rem;
+    border-top: 1px solid rgb(192, 192, 192);
+}
+
+p {
+    margin: 0;
+}
+
+.contacts-container {
+    height: 93%;
+}
+
+
+.info-dx {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #727C88;
+}
+
+.nome {
+    font-weight: 600;
+}
+
+.info {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #727C88;
+}
+
+#message-page {
+    /* border: 2px dashed red; */
+    height: calc(100% - 16%);
+    overflow: scroll;
+    background-image: url('../img/bg2.png');
+    background-size: contain;
+    padding: 1rem 0;
+}
+
+.message-bar {
+    /* border: 2px dashed red; */
+    width: 90%;
+}
+
+.message-bar-button {
+    /* border: 2px dashed red; */
+    width: 5%;
+    text-align: center;
+}
+
+#message-space {
+    /* border: 2px dashed green; */
+    width: 80%;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    /* border: 2px dashed purple; */
+    align-items: flex-end;
+    display: flex;
+    padding: 0.3rem;
+}
+
+.msg {
+    padding: 0.5rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 20rem;
+}
+
+.sent {
+    background-color: #D5F9BA;
+}
+
+.recived {
+    background-color: #FFFFFF;
+}
+
+.sent-line {
+    justify-content: end;
+}
+
+.ora-invio {
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #727C88;
 }
